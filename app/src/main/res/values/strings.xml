@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">L04-Reservation</string>
+    <string name="textView_name">Name:</string>
+    <string name="textView_numb">Mobile Number:</string>
+    <string name="textView_pax">Size of Group:</string>
+    <string name="textView_selectDate">Select Date</string>
+    <string name="textView_selectTime">Select Time</string>
+    <string name="textView_dining">Select Dining Area</string>
+    <string name="radio_smoke">Smoking Area</string>
+    <string name="radio_noSmoke">Non-Smoking Area</string>
+    <string name="button_reset">RESET</string>
+    <string name="button_reservation">Confirm Reservation</string>
+
+</resources>
