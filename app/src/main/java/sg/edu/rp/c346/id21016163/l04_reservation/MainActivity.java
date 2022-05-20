@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int checkedRadioId = smokeArea.getCheckedRadioButtonId();
                 if (name.getText().toString().trim().length()!=0 && pax.getText().toString().trim().length()!=0 &&
-                        numb.getText().toString().trim().length()!=0 && checkedRadioId == R.id.radioButtonSmoke && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()!=0 && checkedRadioId == R.id.radioButtonSmoke && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Successfully Reserved\nName: " + name.getText()
                             + "\nSize of Group: " + pax.getText()
                             + "\nMobile Number: " + numb.getText()
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                             + "\nDining Area: Smoking Area" ,Toast.LENGTH_LONG).show();
                 }
                 else if(name.getText().toString().trim().length()!=0 && pax.getText().toString().trim().length()!=0 &&
-                        numb.getText().toString().trim().length()!=0 && checkedRadioId == R.id.radioButtonNoSmoke && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()!=0 && checkedRadioId == R.id.radioButtonNoSmoke && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Successfully Reserved\nName: " + name.getText()
                             + "\nSize of Group: " + pax.getText()
                             + "\nMobile Number: " + numb.getText()
@@ -65,23 +65,23 @@ public class MainActivity extends AppCompatActivity {
                             + "\nDining Area: Non-Smoking Area" ,Toast.LENGTH_LONG).show();
                 }
                 else if(name.getText().toString().trim().length()==0 && pax.getText().toString().trim().length()!=0 &&
-                        numb.getText().toString().trim().length()!=0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()!=0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Failed to Reserve. Please enter name.", Toast.LENGTH_LONG).show();
                 }
                 else if(name.getText().toString().trim().length()!=0 && pax.getText().toString().trim().length()==0 &&
-                        numb.getText().toString().trim().length()!=0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()!=0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Failed to Reserve. Please enter size of group.", Toast.LENGTH_LONG).show();
                 }
                 else if(name.getText().toString().trim().length()!=0 && pax.getText().toString().trim().length()!=0 &&
-                        numb.getText().toString().trim().length()==0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()==0 && (checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Failed to Reserve. Please enter mobile number.", Toast.LENGTH_LONG).show();
 
                 }else if(name.getText().toString().trim().length()!=0 && pax.getText().toString().trim().length()!=0 &&
-                        numb.getText().toString().trim().length()!=0 && !(checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()!=0 && !(checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Failed to Reserve. Please select dining area.", Toast.LENGTH_LONG).show();
                 }
                 else if(name.getText().toString().trim().length()==0 || pax.getText().toString().trim().length()==0 ||
-                        numb.getText().toString().trim().length()==0 || !(checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && (dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020)){
+                        numb.getText().toString().trim().length()==0 || !(checkedRadioId == R.id.radioButtonNoSmoke || checkedRadioId == R.id.radioButtonSmoke) && ((dp.getMonth() >= 5 && dp.getDayOfMonth() > 1 && dp.getYear() >= 2020) || ( dp.getYear() > 2020))){
                     Toast.makeText(MainActivity.this,"Failed to Reserve. Please enter all fields.",Toast.LENGTH_LONG).show();
                 }
         }});
